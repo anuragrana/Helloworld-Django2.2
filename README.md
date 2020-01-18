@@ -7,3 +7,10 @@ This is the boilerplate code to be used in different tutorials.
 - Clone this git repository to your system.   
 - Now install the dependencies using command `pip install -r requirements.txt`.   
 - Start the Django developement server using command `python manage.py runserver`.
+
+----
+### Feature Branches:
+| Branch | Feature |
+| ------ | ------- |
+| [Master](https://github.com/anuragrana/Helloworld-Django2.2/tree/master) | Hello world in Django 2.2 example |
+| [flash_messages](https://github.com/anuragrana/Helloworld-Django2.2/tree/flash_messages) | Flash Messages in Django templates |
