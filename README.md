@@ -13,4 +13,5 @@ This is the boilerplate code to be used in different tutorials.
 | Branch | Feature |
 | ------ | ------- |
 | [Master](https://github.com/anuragrana/Helloworld-Django2.2/tree/master) | Hello world in Django 2.2 example |
-| [flash_messages](https://github.com/anuragrana/Helloworld-Django2.2/tree/flash_messages) | Flash Messages in Django templates |
+| [flash_messages](https://github.com/anuragrana/Helloworld-Django2.2/tree/flash_messages) | Flash Messages in Django templates | 
+|[get_request_example](https://github.com/anuragrana/Helloworld-Django2.2/tree/get_request_example) | Getting query parameters from request in Django |
