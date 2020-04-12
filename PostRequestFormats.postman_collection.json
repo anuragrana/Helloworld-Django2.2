@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "66dc4090-4abd-4341-9b62-bdcaa8198dda",
+		"name": "Post Request Formats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Form Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "pythoncircle",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.pythoncircle.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/post-example/form-data/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post-example",
+						"form-data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Form UrlEncoded",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "pythoncircle",
+							"type": "text"
+						},
+						{
+							"key": "name_spaced",
+							"value": "python circle",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.pythoncircle.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/post-example/form-urlencoded/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post-example",
+						"form-urlencoded",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Binary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/home/rana/helloworld.txt"
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/post-example/binary/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post-example",
+						"binary",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Form Data with File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/rana/helloworld.txt"
+						},
+						{
+							"key": "name",
+							"value": "pythoncircle",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/post-example/file-upload/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post-example",
+						"file-upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No Body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/post-example/none/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post-example",
+						"none",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Raw Body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"pythoncircle\",\n\t\"url\": \"https://www.pythoncircle.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/post-example/raw/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"post-example",
+						"raw",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
